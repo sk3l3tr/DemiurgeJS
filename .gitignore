@@ -1,0 +1,14 @@
+.DS_Store
+
+dist
+node_modules
+*.tgz
+package-lock.json
+coverage/
+.nyc_output/
+
+# agents
+skills-lock.json
+.agents/
+
+bin/*
