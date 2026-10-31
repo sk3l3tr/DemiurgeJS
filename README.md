@@ -1,4 +1,13 @@
-# DemiurgeJS
+<p align="center">
+  <img src="docs/DemiurgeJS.png" alt="DemiurgeJS — pixel-art skeleton in a purple hood with golden lettering" width="560" />
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@sk3l3tr/demiurgejs"><img src="https://img.shields.io/npm/v/%40sk3l3tr%2Fdemiurgejs?style=flat-square&amp;color=7000df&amp;labelColor=171020" alt="npm version" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-ffe780?style=flat-square&amp;labelColor=171020" alt="License: MIT" /></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-%3E%3D22-8ab4ff?style=flat-square&amp;labelColor=171020" alt="Node.js 22 or later" /></a>
+  <a href="https://sk3l3tr.github.io/demiurgeJS/"><img src="https://img.shields.io/badge/docs-online-7000df?style=flat-square&amp;labelColor=171020" alt="Documentation" /></a>
+</p>
 
 DemiurgeJS is a lightweight frontend architecture for static sites that need SPA-like behavior without a framework.
 
@@ -16,13 +25,13 @@ DemiurgeJS is now distributed as an npm package with modular builds, while prese
 ### npm
 
 ```bash
-npm install @n0m4d-d3v/demiurgejs
+npm install @sk3l3tr/demiurgejs
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @n0m4d-d3v/demiurgejs
+pnpm add @sk3l3tr/demiurgejs
 ```
 
 ### CDN
@@ -30,16 +39,16 @@ pnpm add @n0m4d-d3v/demiurgejs
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.global.min.js"></script>
 ```
 
 ## Quick Start (ESM)
 
 ```js
-import { bootstrapDemiurge } from "@n0m4d-d3v/demiurgejs";
-import "@n0m4d-d3v/demiurgejs/style.css";
+import { bootstrapDemiurge } from "@sk3l3tr/demiurgejs";
+import "@sk3l3tr/demiurgejs/style.css";
 
 window.PageConfig = {
   layout: {
@@ -63,9 +72,9 @@ bootstrapDemiurge();
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.global.min.js"></script>
 <script>
   window.PageConfig = {
     layout: {
@@ -86,15 +95,15 @@ This preserves the old “include script and it boots on `DOMContentLoaded`” f
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
 ```
 
 ## CSS Import Instructions
 
 - npm/pnpm consumers should import the package CSS subpath:
-  - `@n0m4d-d3v/demiurgejs/style.css`
+  - `@sk3l3tr/demiurgejs/style.css`
 - CDN/script users should include:
   - `dist/demiurge.css` or `dist/demiurge.min.css`
 
@@ -103,8 +112,8 @@ This preserves the old “include script and it boots on `DOMContentLoaded`” f
 Use only what you need (for example, modal service only):
 
 ```js
-import { Modal, initModalDelegation } from "@n0m4d-d3v/demiurgejs";
-import "@n0m4d-d3v/demiurgejs/style.css";
+import { Modal, initModalDelegation } from "@sk3l3tr/demiurgejs";
+import "@sk3l3tr/demiurgejs/style.css";
 
 initModalDelegation(document);
 
@@ -117,7 +126,7 @@ modal?.open();
 If you want script-tag behavior with zero custom bootstrap code:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
 ```
 
 This build:
@@ -153,7 +162,7 @@ New browser builds also expose `window.Demiurge` as the preferred namespace.
 
 Full documentation:
 
-- https://n0m4d-d3v.github.io/demiurgeJS/
+- https://sk3l3tr.github.io/demiurgeJS/
 
 Repository examples:
 

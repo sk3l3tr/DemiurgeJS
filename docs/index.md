@@ -59,8 +59,8 @@ Bootstrap and entries:
 Use this when your project has a bundler/build system.
 
 ```js
-import { bootstrapDemiurge, Modal } from "@n0m4d-d3v/demiurgejs";
-import "@n0m4d-d3v/demiurgejs/style.css";
+import { bootstrapDemiurge, Modal } from "@sk3l3tr/demiurgejs";
+import "@sk3l3tr/demiurgejs/style.css";
 
 bootstrapDemiurge();
 ```
@@ -68,7 +68,7 @@ bootstrapDemiurge();
 You can also import individual APIs:
 
 ```js
-import { Modal, initModalDelegation } from "@n0m4d-d3v/demiurgejs";
+import { Modal, initModalDelegation } from "@sk3l3tr/demiurgejs";
 
 initModalDelegation(document);
 ```
@@ -82,9 +82,9 @@ Manual bootstrap:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.global.min.js"></script>
 <script>
   Demiurge.bootstrapDemiurge();
 </script>
@@ -93,7 +93,7 @@ Manual bootstrap:
 Auto-bootstrap (legacy-friendly):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/auto-bootstrap.global.min.js"></script>
 ```
 
 ## Backward Compatibility (Globals)
@@ -218,5 +218,5 @@ demiurgejs --help
 To remove the global link:
 
 ```bash
-npm unlink -g @n0m4d-d3v/demiurgejs
+npm unlink -g @sk3l3tr/demiurgejs
 ```

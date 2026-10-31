@@ -475,8 +475,8 @@ Bad:
 ### src/main.js
 
 ```js
-import { bootstrapDemiurge } from "@n0m4d-d3v/demiurgejs";
-import "@n0m4d-d3v/demiurgejs/style.css";
+import { bootstrapDemiurge } from "@sk3l3tr/demiurgejs";
+import "@sk3l3tr/demiurgejs/style.css";
 
 window.PageConfig = {
   layout: {
@@ -545,7 +545,7 @@ window.HomePage = {
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.min.css"
 />
 
 <header id="app-header"></header>
@@ -567,7 +567,7 @@ window.HomePage = {
   };
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@n0m4d-d3v/demiurgejs/dist/demiurge.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sk3l3tr/demiurgejs/dist/demiurge.global.min.js"></script>
 <script>
   Demiurge.bootstrapDemiurge();
 </script>
@@ -621,7 +621,7 @@ Notes:
 ### Forward-compatible generation rules
 
 - Do not rely on internal source file paths of DemiurgeJS in consumer apps.
-- Use package exports (@n0m4d-d3v/demiurgejs, .../style.css) when using npm/pnpm.
+- Use package exports (@sk3l3tr/demiurgejs, .../style.css) when using npm/pnpm.
 - Use documented dist/ artifacts when using CDN/script tag.
 - Keep page scripts independent and cleanup-safe to remain compatible with lifecycle behavior.
 - Avoid monkey-patching DemiurgeJS objects; wrap behavior externally instead.

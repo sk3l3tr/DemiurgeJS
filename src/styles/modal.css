@@ -33,6 +33,9 @@
   max-height: 90vh;
   overflow: auto;
   padding: 3.5rem;
+  background: var(--modal-background, Canvas);
+  color: var(--text, CanvasText);
+  border: 1px solid var(--modal-border, #726080);
 }
 
 /* Botón de cierre */
@@ -44,5 +47,5 @@
   background: transparent;
   font-size: 1.25rem;
   cursor: pointer;
-  color: var(--text);
+  color: var(--text, inherit);
 }

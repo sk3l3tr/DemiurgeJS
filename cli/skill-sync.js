@@ -92,7 +92,7 @@ export function syncSkill({ projectPath = process.cwd() } = {}) {
   const lockPath = path.join(rootPath, 'skills-lock.json');
   const existingLock = ensureLockShape(readJsonFile(lockPath));
   existingLock.skills[SKILL_NAME] = {
-    source: '@n0m4d-d3v/demiurgejs',
+    source: '@sk3l3tr/demiurgejs',
     sourceType: 'npm',
     computedHash: sha256(normalizedContent)
   };

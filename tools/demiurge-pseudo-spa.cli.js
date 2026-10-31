@@ -755,15 +755,19 @@ writeFile(
 // ---------------------- css ----------------------
 writeFile(
   path.join(ROOT, "css", "styles.css"),
-  `body {
+  `:root {
+  color-scheme: dark;
+}
+
+body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e 0, #050608 60%);
-  color: #f5f5f5;
+  background: radial-gradient(circle at top, #290b48 0, #0b0710 60%);
+  color: #fff3c4;
 }
 
 a {
-  color: inherit;
+  color: #8ab4ff;
   text-decoration: none;
 }
 
@@ -777,9 +781,9 @@ a {
 }
 
 .card-glass {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(23, 16, 32, 0.9);
   border-radius: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  border: 1px solid #726080;
   backdrop-filter: blur(10px);
 }
 
@@ -788,7 +792,7 @@ a {
 }
 
 #menu a.accent {
-  border-bottom: 2px solid #38bdf8;
+  border-bottom: 2px solid #ffe780;
 }
 
 main {
